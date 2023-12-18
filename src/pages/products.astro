@@ -1,0 +1,22 @@
+---
+	import Navbar from "../components/Navbar.jsx";
+	import ProductsSection from "../components/ProductsSection";
+	import Footer from "../components/Footer.jsx"
+	const pageTitle = "Products";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/images/favicon.png" />
+		<script src="https://kit.fontawesome.com/8e98a234d5.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body class="overflow-x-hidden">
+		<Navbar client:load/>
+		<ProductsSection client:load />
+		<Footer />
+	</body>
+</html>
